@@ -1,0 +1,390 @@
+/* START OF CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* END OF CSS RESET */
+
+
+/* START OF CSS FOR ENTIRE HTML DOCUMENT */
+html {
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    align-content: center;
+    margin: 0 auto;
+    width: 485px;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav a {
+    font-size: 1.25em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.25em;
+    font-weight: 100;
+    padding: 12px 10px;
+}
+
+figcaption,
+label,
+input,
+small {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+/* END OF CSS FOR ENTIRE HTML DOCUMENT */
+
+
+/* START OF CSS FOR HEADER */
+h1 {
+    color: #007d7b;
+    background-color: #ffffff;
+    font-size: 3em;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+[href="#top"] {
+    bottom: 0px;
+    position: fixed;
+    right: 20px;
+}
+
+nav ul {
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 25px auto;
+    text-align: center;
+    width: 61%;
+}
+
+nav li {
+    align-items: center;
+    display: block;
+}
+
+nav a {
+    color: #ffffff;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #007d7b;
+}
+/* END OF CSS FOR HEADER */
+
+
+/* START OF CSS FOR MAIN CONTENT (PHOTO GALLERY) */
+main {
+    background-color: #ffffff;
+}
+
+img {
+    display: block;
+    margin: 4px auto;
+}
+
+figcaption {
+    text-align: center;
+}
+
+figcaption[title="fullImgTopBlkTxt"] {
+    color: #000000;
+    position: relative;
+    text-transform: uppercase;
+    top: -615px;
+}
+
+figcaption[title="fullImgBtmBlkTxt"] {
+    color: #000000;
+    position: relative;
+    text-transform: uppercase;
+    top: -33px;
+}
+
+figcaption[title="imgTopBlkTxt"] {
+    color: #000000;
+    position: relative;
+    text-transform: uppercase;
+    top: -267px;
+}
+
+figcaption[title="imgBtmBlkTxt"] {
+    color: #000000;
+    position: relative;
+    text-transform: uppercase;
+    top: -33px;
+}
+
+figcaption[title="imgTopWhtTxt"] {
+    color: #ffffff;
+    position: relative;
+    text-transform: uppercase;
+    top: -269px;
+}
+
+figcaption[title="imgBtmWhtTxt"] {
+    color: #ffffff;
+    position: relative;
+    text-transform: uppercase;
+    top: -33px;
+}
+/* END OF CSS FOR MAIN CONTENT (PHOTO GALLERY) */
+
+
+/* START OF CSS FOR CONTACT FORM */
+#contact {
+    background-color: #000000;
+}
+
+#contact h2,
+#contact p,
+#contact label {
+    color: #ffffff;
+}
+
+#contact p {
+    text-align: center;
+}
+
+#hiddenTxt {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 83%
+}
+
+label {
+    color: #ffffff;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+    height: 1.85em;
+}
+
+input[type="submit"] {
+    background-color: #007d7b;
+    border-radius: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    height: 40px;
+    justify-items: center;
+    margin: 15px auto;
+    width: 50%;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #007d7b;
+}
+
+::placeholder {
+    color: #007d7b;
+    font-weight: bold;
+    padding-left: 10px;
+}
+/* END OF CSS FOR CONTACT FORM */
+
+
+/* START OF CSS FOR FOOTER */
+footer {
+    margin: 0 auto;
+    text-align: center;
+}
+
+small {
+    color: #ffffff;
+    padding: 10px 0;
+}
+/* END OF CSS FOR FOOTER */
+
+
+/* START OF CSS FOR MEDIA QUERIES */
+@media screen and (min-width:880px) {
+    body {
+        width: 880px;
+    }
+
+    nav ul {
+        margin: 25px auto;
+        text-align: center;
+        width: 35%;
+    }
+
+    #gridColumn {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    body {
+        width: 1300px;
+    }
+
+    nav ul {
+        padding-left: 910px;
+        text-align: right;
+        width: 30%;
+    }
+
+    #gridColumn {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+/* END OF CSS FOR MEDIA QUERIES */
